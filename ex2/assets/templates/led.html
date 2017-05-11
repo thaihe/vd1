@@ -1,0 +1,41 @@
+<div class="container" ng-controller="LedController">
+    <div class="jumbotron text-center">
+        <h1>THÁI XUÂN HUỆ</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-6">
+                <div class="toggle" style="text-align:center;padding-top:10px;">
+                    <pre style="padding-right:18px">On/Off | Blink</pre>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-3 text-center" style="text-align:center;padding-top:8px;background:yellow"><pre>LED1</pre></div>
+            <div class="col-sm-3">
+                <div class="toggle" style="text-align:center; padding-top:10px;">
+                    <input id="yellow" type="checkbox" class="mybox" ng-model="led1.on" ng-change="changeLed1On()" />
+                    <input id="yellow-blink" type="checkbox" class="mybox" ng-model="led1.blink" ng-change="changeLed1Blink()" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-3 text-center" style="text-align:center;padding-top:8px;background:red"><pre>LED2</pre></div>
+            <div class="col-sm-3">
+                <div class="toggle" style="text-align:center;padding-top:10px;">
+                    <input id="red" type="checkbox" class="mybox" ng-model="led2.on" ng-change="changeLed2On()" />
+                    <input id="red-blink" type="checkbox" class="mybox" ng-model="led2.blink" ng-change="changeLed2Blink()" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 col-sm-offset-3 text-center" style="text-align:center;padding-top:8px;background:green"><pre>LED3</pre></div>
+            <div class="col-sm-3">
+                <div class="toggle" style="text-align:center;padding-top:10px;">
+                    <input id="green" type="checkbox" class="mybox" ng-model="led3.on" ng-change="changeLed3On()" />
+                    <input id="green-blink" type="checkbox" class="mybox" ng-model="led3.blink" ng-change="changeLed3Blink()" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
