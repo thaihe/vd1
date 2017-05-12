@@ -1,11 +1,8 @@
 var Gpio = require('onoff').Gpio,
-    led1 = new Gpio(2, 'out');
-    led2 = new Gpio(3, 'out');
-	led3 = new Gpio(4, 'out');
+    led = new Gpio(17, 'out');
+ 
 var iv = setInterval(function(){
-led1.writeSync(led.readSync() === 0 ? 1 : 0);
-led2.writeSync(led.readSync() === 0 ? 1 : 0);
-led3.writeSync(led.readSync() === 0 ? 1 : 0);
+led.writeSync(led.readSync() === 0 ? 1 : 0)
 }, 500);
 /* 
 // Stop blinking the LED and turn it off after 5 seconds.
